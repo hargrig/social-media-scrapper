@@ -1,0 +1,12 @@
+psutil
+bs4
+beautifulsoup4
+celery
+gspread
+numpy
+oauth2client
+pandas
+redis
+requests
+selenium
+webdriver-manager

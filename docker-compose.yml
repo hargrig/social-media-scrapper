@@ -1,0 +1,16 @@
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+  celery:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: celery
+    command: sh start.sh
+    volumes:
+      - .:/celery_app
+    depends_on:
+      - redis
