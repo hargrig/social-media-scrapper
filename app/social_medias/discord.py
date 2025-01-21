@@ -23,7 +23,7 @@ def parse(content, url):
     soup = BeautifulSoup(content, 'html.parser')
 
     followers = soup.find_all(
-        'span', {'class': 'pillMessage_b83a05'}
+        'span', {'class': 'text-sm/normal_dc00ef'}
     )[-1].text.strip()
 
     return followers.split(' ')[0]
