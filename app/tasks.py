@@ -54,12 +54,11 @@ celery_app.conf.beat_schedule = {
     },
 }
 
+# Open comment below only for testing (debugging) purposes, 
+# it runs the scrapper once the container runs.
 
-celery_app.conf.timezone = 'Asia/Yerevan'
-
-
-@worker_ready.connect
-def at_start(sender, **kwargs):
-    with sender.app.connection() as conn:
-        sender.app.send_task('app.tasks.scrape_social_media')
+# @worker_ready.connect
+# def at_start(sender, **kwargs):
+#     with sender.app.connection() as conn:
+#         sender.app.send_task('app.tasks.scrape_social_media')
 
