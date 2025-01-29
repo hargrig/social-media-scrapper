@@ -63,7 +63,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN useradd -ms /bin/bash $APP_USER
 ENV PATH="${PATH}:/home/$APP_USER/.local/bin"
 
+COPY . .
+
 RUN chown -R $APP_USER:$APP_USER $APP_HOME
 USER $APP_USER
-
-COPY . .

@@ -34,8 +34,8 @@ def scrape_social_media():
 
     spreadsheet_data = restruct_scrapped_data(scrapped_data)
 
-    google_spreadsheet = GoogleSpreadsheetService(spreadsheet_data)
-    google_spreadsheet.fill_spreadsheet()
+    # google_spreadsheet = GoogleSpreadsheetService(spreadsheet_data)
+    # google_spreadsheet.fill_spreadsheet()
 
     with open(f'{EXPORT_DIR}/scrapped-data-{scrape_date}.json', 'w') as scrapped_file:
         json.dump(scrapped_data, scrapped_file, indent=4)
