@@ -26,7 +26,8 @@
             "AxelarTurkey": "https://x.com/AxelarTurkiye",
             "AxelarThailand": "https://x.com/AxelarThailand",
             "AxelarKorea": "https://x.com/AxelarKorea",
-            "AxelarLATAM": "https://x.com/Axelar_ES"
+            "AxelarLATAM": "https://x.com/Axelar_ES",
+            "AxelarBrazil": "https://x.com/Axelar_BR"
         }
     },
     "Telegram": {
@@ -49,6 +50,7 @@
             "AxelarLATAM": "https://t.me/AxelarNetwork_ES",
             "AxelarUkraine": "https://t.me/axelar_ukr",
             "AxelarArabic": "https://t.me/AxelarArabic",
+            "AxelarBrazil": "https://t.me/Axelar_BR",
             "MultichainNation": null
         }
     },
@@ -72,6 +74,7 @@
             "AxelarLATAM": null,
             "AxelarUkraine": null,
             "AxelarArabic": null,
+            "AxelarBrazil": null,
             "MultichainNation": null
         }
     }
