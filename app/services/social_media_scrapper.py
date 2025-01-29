@@ -26,6 +26,8 @@ class SocialMediaScrapperService:
 
             if login_required:
                 creds = self.credentials.get(platform, {})
+            else:
+                creds = {}
 
             try:
                 module = importlib.import_module(f'app.social_medias.{platform}')
