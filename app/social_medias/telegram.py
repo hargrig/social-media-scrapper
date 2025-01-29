@@ -45,9 +45,13 @@ def parse(content, url):
 def get_data(channel_urls, creds):
     driver = get_driver()
 
-    if creds.get('phone_number'):
-        login(driver, **creds)
-        print("Successfully logged in to DISCROD !!")
+    if creds:
+        try:
+            print("Trying to login X ...")
+            login(driver, **creds)
+            print("Successfully logged in to X !!")
+        except Exception as ex:
+            print(ex)
 
     data = {}
 
