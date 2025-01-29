@@ -34,8 +34,8 @@ def scrape_social_media():
 
     spreadsheet_data = restruct_scrapped_data(scrapped_data)
 
-    # google_spreadsheet = GoogleSpreadsheetService(spreadsheet_data)
-    # google_spreadsheet.fill_spreadsheet()
+    google_spreadsheet = GoogleSpreadsheetService(spreadsheet_data)
+    google_spreadsheet.fill_spreadsheet()
 
     with open(f'{EXPORT_DIR}/scrapped-data-{scrape_date}.json', 'w') as scrapped_file:
         json.dump(scrapped_data, scrapped_file, indent=4)
@@ -57,8 +57,8 @@ celery_app.conf.beat_schedule = {
 # Open comment below only for testing (debugging) purposes, 
 # it runs the scrapper once the container runs.
 
-@worker_ready.connect
-def at_start(sender, **kwargs):
-    with sender.app.connection() as conn:
-        sender.app.send_task('app.tasks.scrape_social_media')
+# @worker_ready.connect
+# def at_start(sender, **kwargs):
+#     with sender.app.connection() as conn:
+#         sender.app.send_task('app.tasks.scrape_social_media')
 
