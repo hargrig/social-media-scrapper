@@ -20,7 +20,13 @@ class SocialMediaScrapperService:
             print("=========================================================")
 
             platform = platform.split("-")[0].lower()
-            
+
+            login_required = channel_urls_data.get("meta", {}).get("login_required", False)
+            channel_urls = channel_urls_data.get("urls", {})
+
+            if login_required:
+                creds = self.credentials.get(platform, {})
+
             try:
                 module = importlib.import_module(f'app.social_medias.{platform}')
                 get_data = getattr(module, 'get_data')
@@ -29,7 +35,7 @@ class SocialMediaScrapperService:
                 continue
 
             try:
-                platform_data = get_data(channel_urls_data, self.credentials.get(platform))
+                platform_data = get_data(channel_urls, creds)
             except Exception as ex:
                 print(ex)
                 continue

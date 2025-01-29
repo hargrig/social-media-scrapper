@@ -9,60 +9,70 @@
             "AxelarFoundation": "https://x.com/AxelarFDN",
             "AxelarIntern": "https://x.com/AxelarIntern",
             "AxelarChina": "https://x.com/Axelarzh",
-            "AxelarVietnam": null,
             "AxelarBuilders": null,
+            "AxelarVietnam": null,
+            "AxelarRussia": null,
             "AxelarUkraine": null,
             "AxelarArabic": null,
-            "AxelarRussia": null,
             "MultichainNation": "https://x.com/MultichainPod"
         }
     },
     "X-1": {
         "meta": {
-            "login_required": false
+            "login_required": true
         },
         "urls": {
             "AxelarFrance": "https://x.com/Axelar_fr",
             "AxelarTurkey": "https://x.com/AxelarTurkiye",
             "AxelarThailand": "https://x.com/AxelarThailand",
-            "AxelarLATAM": "https://x.com/Axelar_ES",
-            "AxelarKorea": "https://x.com/AxelarKorea"
+            "AxelarKorea": "https://x.com/AxelarKorea",
+            "AxelarLATAM": "https://x.com/Axelar_ES"
         }
     },
     "Telegram": {
-        "AxelarNetwork": "https://t.me/axelarcommunity",
-        "AxelarEcosystem": "https://t.me/axelarators",
-        "AxelarFoundation": null,
-        "AxelarIntern": null,
-        "AxelarChina": "https://t.me/axelarchain",
-        "AxelarBuilders": "https://t.me/+2sha5MzXQDMzY2Yx",
-        "AxelarFrance": "https://t.me/axelar_francophone",
-        "AxelarVietnam": "https://t.me/axelar_vietnam",
-        "AxelarTurkey": "https://t.me/axelarcommunityTR",
-        "AxelarThailand": "https://t.me/axelarthai",
-        "AxelarKorea": "https://t.me/axelar_kor",
-        "AxelarRussia": "https://t.me/ru_Axelar",
-        "AxelarLATAM": "https://t.me/AxelarNetwork_ES",
-        "AxelarUkraine": "https://t.me/axelar_ukr",
-        "AxelarArabic": "https://t.me/AxelarArabic",
-        "MultichainNation": null
+        "meta": {
+            "login_required": false
+        },
+        "urls": {
+            "AxelarNetwork": "https://t.me/axelarcommunity",
+            "AxelarEcosystem": "https://t.me/axelarators",
+            "AxelarFoundation": null,
+            "AxelarIntern": null,
+            "AxelarChina": "https://t.me/axelarchain",
+            "AxelarBuilders": "https://t.me/+2sha5MzXQDMzY2Yx",
+            "AxelarFrance": "https://t.me/axelar_francophone",
+            "AxelarVietnam": "https://t.me/axelar_vietnam",
+            "AxelarTurkey": "https://t.me/axelarcommunityTR",
+            "AxelarThailand": "https://t.me/axelarthai",
+            "AxelarKorea": "https://t.me/axelar_kor",
+            "AxelarRussia": "https://t.me/ru_Axelar",
+            "AxelarLATAM": "https://t.me/AxelarNetwork_ES",
+            "AxelarUkraine": "https://t.me/axelar_ukr",
+            "AxelarArabic": "https://t.me/AxelarArabic",
+            "MultichainNation": null
+        }
     },
     "Discord": {
-        "AxelarNetwork": "https://discord.gg/invite/axelar",
-        "AxelarEcosystem": null,
-        "AxelarFoundation": null,
-        "AxelarIntern": null,
-        "AxelarChina": null,
-        "AxelarBuilders": null,
-        "AxelarFrance": null,
-        "AxelarVietnam": null,
-        "AxelarTurkey": null,
-        "AxelarThailand": null,
-        "AxelarKorea": null,
-        "AxelarRussia": null,
-        "AxelarLATAM": null,
-        "AxelarUkraine": null,
-        "AxelarArabic": null,
-        "MultichainNation": null
+        "meta": {
+            "login_required": false
+        },
+        "urls": {
+            "AxelarNetwork": "https://discord.gg/invite/axelar",
+            "AxelarEcosystem": null,
+            "AxelarFoundation": null,
+            "AxelarIntern": null,
+            "AxelarChina": null,
+            "AxelarBuilders": null,
+            "AxelarFrance": null,
+            "AxelarVietnam": null,
+            "AxelarTurkey": null,
+            "AxelarThailand": null,
+            "AxelarKorea": null,
+            "AxelarRussia": null,
+            "AxelarLATAM": null,
+            "AxelarUkraine": null,
+            "AxelarArabic": null,
+            "MultichainNation": null
+        }
     }
 }

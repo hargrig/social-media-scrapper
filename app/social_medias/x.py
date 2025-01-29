@@ -32,13 +32,10 @@ def parse(content, url):
     return followers_href.find('span').text.strip()
 
 
-def get_data(channel_urls_data, creds):
+def get_data(channel_urls, creds):
     driver = get_driver()
 
-    login_required = channel_urls_data.get("meta", {}).get("login_required", False)
-    channel_urls = channel_urls_data.get("urls", {})
-
-    if login_required:
+    if creds:
         try:
             print("Trying to login X ...")
             login(driver, **creds)
