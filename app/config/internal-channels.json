@@ -1,28 +1,4 @@
 {
-    "Discord": {
-        "meta": {
-            "login_required": false
-        },
-        "urls": {
-            "AxelarNetwork": "https://discord.com/invite/axelar",
-            "AxelarEcosystem": null,
-            "AxelarFoundation": null,
-            "AxelarIntern": null,
-            "AxelarChina": null,
-            "AxelarBuilders": null,
-            "AxelarFrance": null,
-            "AxelarVietnam": null,
-            "AxelarTurkey": null,
-            "AxelarThailand": null,
-            "AxelarKorea": null,
-            "AxelarRussia": null,
-            "AxelarLATAM": null,
-            "AxelarUkraine": null,
-            "AxelarArabic": null,
-            "AxelarBrazil": null,
-            "MultichainNation": null
-        }
-    },
     "X-0": {
         "meta": {
             "login_required": false
@@ -75,6 +51,30 @@
             "AxelarUkraine": "https://t.me/axelar_ukr",
             "AxelarArabic": "https://t.me/AxelarArabic",
             "AxelarBrazil": "https://t.me/Axelar_BR",
+            "MultichainNation": null
+        }
+    },
+    "Discord": {
+        "meta": {
+            "login_required": false
+        },
+        "urls": {
+            "AxelarNetwork": "https://discord.com/invite/axelar",
+            "AxelarEcosystem": null,
+            "AxelarFoundation": null,
+            "AxelarIntern": null,
+            "AxelarChina": null,
+            "AxelarBuilders": null,
+            "AxelarFrance": null,
+            "AxelarVietnam": null,
+            "AxelarTurkey": null,
+            "AxelarThailand": null,
+            "AxelarKorea": null,
+            "AxelarRussia": null,
+            "AxelarLATAM": null,
+            "AxelarUkraine": null,
+            "AxelarArabic": null,
+            "AxelarBrazil": null,
             "MultichainNation": null
         }
     }

@@ -27,16 +27,10 @@ def parse(content, url):
         "span", class_=re.compile(r"^text-sm/normal_"), attrs={"data-text-variant": "text-sm/normal"}
     )
 
-    print(spans[1])
-
     if spans and "Members" in spans[1].text.strip():
         followers = spans[1].text
     else:
         followers = ''
-
-    # followers = soup.find_all(
-    #     'span', {'class': 'text-sm/normal_dc00ef'}
-    # )[-1].text.strip()
 
     return followers.split(' ')[0]
 
