@@ -2,3 +2,4 @@
 chrome-exe
 app/config/gcp-creds.json
 app/config/platform-creds.json
+.history
