@@ -28,8 +28,11 @@ ORDER = [
 
 
 def restruct_scrapped_data(data):
+    # now = datetime.now()
+    # scrape_datetime = now.strftime('%Y-%m-%d %H:%M:%S')
+
     now = datetime.now()
-    scrape_datetime = now.strftime('%Y-%m-%d %H:%M:%S')
+    scrape_datetime = now.strftime('%Y-%m-%d') + ' 03:00:00'
 
     result = {}
     for platform, channel_data in data.items():
