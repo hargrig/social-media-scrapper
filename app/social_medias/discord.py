@@ -23,14 +23,14 @@ def login(driver, email, password):
 def parse(content, url):
     soup = BeautifulSoup(content, 'html.parser')
 
-    span = soup.find(
+    spans = soup.find_all(
         "span", class_=re.compile(r"^text-sm/normal_"), attrs={"data-text-variant": "text-sm/normal"}
     )
 
-    print(span)
+    print(spans[1])
 
-    if span and "Members" in span.text.strip():
-        followers = span.text
+    if spans and "Members" in spans[1].text.strip():
+        followers = spans[1].text
     else:
         followers = ''
 
