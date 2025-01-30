@@ -63,6 +63,4 @@ def get_data(channel_urls, creds):
             print(f"Failed to scrape - {channel_name} X")
             print(ex)
 
-    driver.quit()
-
     return data

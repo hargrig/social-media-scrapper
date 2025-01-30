@@ -34,9 +34,9 @@ def get_data(channel_urls, creds):
 
     if creds:
         try:
-            print("Trying to login DISCORD ...")
+            print("Trying to login X ...")
             login(driver, **creds)
-            print("Successfully logged in to DISCORD !!")
+            print("Successfully logged in to X !!")
         except Exception as ex:
             print(ex)
 
@@ -62,7 +62,5 @@ def get_data(channel_urls, creds):
             data[channel_name] = ''
             print(f"Failed to scrape - {channel_name} X")
             print(ex)
-
-    driver.quit()
 
     return data
