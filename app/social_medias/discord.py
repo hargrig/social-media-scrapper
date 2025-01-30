@@ -24,7 +24,10 @@ def parse(content, url):
     soup = BeautifulSoup(content, 'html.parser')
 
     span = soup.find(
-        "span", class_=re.compile(r"^text-sm/normal_"), attrs={"data-text-variant": "text-sm/normal"})
+        "span", class_=re.compile(r"^text-sm/normal_"), attrs={"data-text-variant": "text-sm/normal"}
+    )
+
+    print(span)
 
     if span and "Members" in span.text.strip():
         followers = span.text
