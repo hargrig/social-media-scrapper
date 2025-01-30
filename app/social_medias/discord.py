@@ -1,3 +1,4 @@
+import re
 import time
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
@@ -22,9 +23,17 @@ def login(driver, email, password):
 def parse(content, url):
     soup = BeautifulSoup(content, 'html.parser')
 
-    followers = soup.find_all(
-        'span', {'class': 'text-sm/normal_dc00ef'}
-    )[-1].text.strip()
+    span = soup.find(
+        "span", class_=re.compile(r"^text-sm/normal_"), attrs={"data-text-variant": "text-sm/normal"})
+
+    if span and "Members" in span.text.strip():
+        followers = span.text
+    else:
+        followers = ''
+
+    # followers = soup.find_all(
+    #     'span', {'class': 'text-sm/normal_dc00ef'}
+    # )[-1].text.strip()
 
     return followers.split(' ')[0]
 
